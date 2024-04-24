@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme')
 export default {
   content: [
     "./index.html",
@@ -13,6 +15,9 @@ export default {
         'medium-brown': 'hsl(var(--medium-brown))',
         'cream': 'hsl(var(--cream))',
         'pale-orange': 'hsl(var(--pale-orange))',
+      },
+      fontFamily:{
+        'sans':['"Dm Sans"', ...defaultTheme.fontFamily.sans],
       }
     },
   },
