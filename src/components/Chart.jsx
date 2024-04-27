@@ -9,7 +9,7 @@ const Chart = () => {
     const renderedChartData = data.map((expenses) => {
         const percentageSizeofBar = (expenses.amount * 100)/chartHeight
         //Formula to get the value in px and multiplied by 2.5 to scale the bars
-        const barHeight = ((160 * percentageSizeofBar)/100)*2
+        const barHeight = ((160 * percentageSizeofBar)/100)*2.6
         const barColor = expenses.day == "wed" ? "bg-cyan" : "bg-soft-red"
         return (
             <div key={expenses.day} className="relative flex flex-col items-center">
@@ -22,7 +22,7 @@ const Chart = () => {
     })
 
     return (
-        <div className="flex justify-between items-end mt-6 min-h-40" ref={node => setChartHeight(node?.clientHeight)}>
+        <div className="flex justify-between items-end mt-14 min-h-40" ref={node => setChartHeight(node?.clientHeight)}>
             {renderedChartData}
         </div>
     )

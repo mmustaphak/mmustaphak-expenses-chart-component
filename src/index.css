@@ -11,8 +11,11 @@
     --cream: 27deg 66% 92%;
     --pale-orange: 33deg 100% 98%
   }
+  html{
+    height: 100%;
+  }
   body{
-    height: 100vh;
+    min-height: 100%;
     background-color: hsl(27, 66%, 92%);
   }
 }

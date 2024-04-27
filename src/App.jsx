@@ -3,7 +3,7 @@ import Main from "./components/Main.jsx"
 
 export default function App() {
   return (
-    <div className="w-[95%] mt-12 mx-auto">
+    <div className="w-[95%] flex flex-col ">
       <Header/>
       <Main/>
     </div>
