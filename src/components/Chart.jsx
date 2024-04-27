@@ -10,9 +10,10 @@ const Chart = () => {
         const percentageSizeofBar = (expenses.amount * 100)/chartHeight
         //Formula to get the value in px and multiplied by 2.5 to scale the bars
         const barHeight = ((160 * percentageSizeofBar)/100)*2.5
+        const barColor = expenses.day == "wed" ? "bg-cyan" : "bg-soft-red"
         return (
             <div key={expenses.day}>
-                <div style={{height: barHeight}} className="min-w-[28px] rounded bg-soft-red"></div>
+                <div style={{height: barHeight}} className={`min-w-[28px] rounded ${barColor}`}></div>
                 <p className="mt-2 text-medium-brown text-xs">{expenses.day}</p>
             </div>
         )
