@@ -22,7 +22,7 @@ const Chart = () => {
     })
 
     return (
-        <div className="flex justify-between items-end mt-14 min-h-40" ref={node => setChartHeight(node?.clientHeight)}>
+        <div className="flex justify-between items-end mt-14 mx-auto min-h-40" ref={node => setChartHeight(node?.clientHeight)}>
             {renderedChartData}
         </div>
     )

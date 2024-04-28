@@ -2,7 +2,7 @@ import Chart from "./Chart.jsx"
 
 const Main = ()=>{
     return(
-        <main className="mt-4 py-4 px-4 rounded-md bg-white text-dark-brown">
+        <main className="mt-4 p-4 rounded-lg bg-white text-dark-brown min-[400px]:p-6 min-[400px]:rounded-xl">
             <h2 className="font-bold text-xl">Spending - Last 7 days</h2>
             <Chart/>
             <hr className="border mt-4" />
